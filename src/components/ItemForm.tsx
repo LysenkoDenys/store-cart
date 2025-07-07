@@ -2,7 +2,12 @@ import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
 import { useDispatch, useSelector } from 'react-redux';
-import { setItemPrice, setItemAmount, setItemName } from '../store/index.ts';
+import {
+  setItemPrice,
+  setItemAmount,
+  setItemName,
+  addItem,
+} from '../store/index.ts';
 import type { StoreType } from '../store/index.ts';
 const ItemForm = () => {
   const dispatch = useDispatch();
@@ -20,6 +25,24 @@ const ItemForm = () => {
     const value =
       e.target.value.length > 0 ? Number(e.target.value) : undefined;
     dispatch(setItemAmount(value));
+  };
+  const handleAddItem = () => {
+    if (
+      itemForm.price &&
+      itemForm.amount &&
+      itemForm.price > 0 &&
+      itemForm.amount > 0 &&
+      itemForm.name.length > 0
+    ) {
+      console.log('Dispatching addItem', itemForm);
+      dispatch(
+        addItem({
+          name: itemForm.name,
+          price: itemForm.price,
+          amount: itemForm.amount,
+        })
+      );
+    }
   };
 
   return (
@@ -49,8 +72,13 @@ const ItemForm = () => {
       />
 
       <Box sx={{ textAlign: 'right', mt: 2 }}>
-        {' '}
-        <Button variant="contained" onClick={() => {}}>
+        <Button
+          variant="contained"
+          onClick={() => {
+            console.log('Button clicked');
+            handleAddItem();
+          }}
+        >
           Add item
         </Button>
       </Box>
