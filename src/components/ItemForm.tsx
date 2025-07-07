@@ -1,9 +1,9 @@
 import Button from '@mui/material/Button';
 import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
-import { useDispatch, useSelector, useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { setItemPrice, setItemAmount, setItemName } from '../store/index.ts';
-
+import type { StoreType } from '../store/index.ts';
 const ItemForm = () => {
   const dispatch = useDispatch();
   const itemForm = useSelector((state: StoreType) => state.itemForm);

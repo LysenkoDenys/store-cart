@@ -10,9 +10,7 @@ import { setSearchString, addItem, removeItem } from './slices/itemsSlice';
 import itemFormReducer from './slices/itemFormSlice';
 import itemsReducer from './slices/itemsSlice';
 
-export type StoreType=ReturnType<typeof store.getState>
-
-}
+export type StoreType = ReturnType<typeof store.getState>;
 
 const store = configureStore({
   reducer: {
