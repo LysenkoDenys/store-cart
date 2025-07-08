@@ -1,38 +1,57 @@
-📦 Project: Online Shop Admin Panel
-A simple React + Redux Toolkit app for managing shop items. Built with React 19, Redux Toolkit, Material UI, Vite, and TypeScript.
+# 📦 Online Shop Admin Panel
 
-🔧 Technologies
-⚛️ React 19
-🎯 Redux Toolkit
-🎨 Material UI
-⚡ Vite
-🧪 TypeScript
-✅ ESLint
+![build](https://img.shields.io/badge/build-passing-brightgreen)
+![license](https://img.shields.io/badge/license-MIT-blue)
+![tech](https://img.shields.io/badge/stack-React_19%20%7C%20Redux_Toolkit%20%7C%20TypeScript%20%7C%20Vite-blueviolet)
 
-🖥️ Features
-Add items (name, price, amount)
-Search items by name
-Delete items
-Live summary:
-total item count
-total quantity
-total value
+A simple **React + Redux Toolkit** app for managing shop items.  
+Built with **React 19**, **Redux Toolkit**, **Material UI**, **Vite**, and **TypeScript**.
 
-Sample
+---
 
-<img width="235" height="461" alt="Image" src="https://github.com/user-attachments/assets/264d34c2-83ee-4526-8378-690e1c6f8e44" />
+## 🖼️ Preview
 
-🚀 How to Start
+<p align="center">
+<img width="230" height="458" alt="Image" src="https://github.com/user-attachments/assets/c108375d-0e4f-4c61-a71f-2237563ed2cc" />
+</p>
+
+---
+
+## 🔧 Technologies
+
+- ⚛️ React 19
+- 🎯 Redux Toolkit
+- 🎨 Material UI
+- ⚡ Vite
+- 🧪 TypeScript
+- ✅ ESLint
+
+---
+
+## 🖥️ Features
+
+- ➕ Add items (name, price, amount)
+- 🔍 Search items by name
+- 🗑️ Delete items
+- 📊 Live summary:
+  - total item count
+  - total quantity
+  - total value
+
+---
+
+## 🚀 How to Start
+
+```bash
 git clone https://github.com/your-username/my-app.git
 cd my-app
 npm install
 npm run dev
-To build:
 
-npm run build
-npm run preview
 
-📁 Project Structure
+## 📁 Project Structure
+```
+
 src/
 ├── components/
 │ ├── ItemForm.tsx
@@ -44,7 +63,10 @@ src/
 ├── main.tsx
 └── App.css
 
-🔒 License
+```
+
+## 🔒 License
 Free to use for educational and demo purposes.
 
 Made with ❤️ using React and Redux Toolkit.
+```
