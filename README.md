@@ -42,14 +42,13 @@ Built with **React 19**, **Redux Toolkit**, **Material UI**, **Vite**, and **Typ
 
 ## 🚀 How to Start
 
-```bash
 git clone https://github.com/your-username/my-app.git
 cd my-app
 npm install
 npm run dev
 
-
 ## 📁 Project Structure
+
 ```
 
 src/
@@ -66,7 +65,7 @@ src/
 ```
 
 ## 🔒 License
+
 Free to use for educational and demo purposes.
 
 Made with ❤️ using React and Redux Toolkit.
-```
