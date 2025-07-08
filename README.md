@@ -1,70 +1,50 @@
-# React + TypeScript + Vite
+📦 Project: Online Shop Admin Panel
+A simple React + Redux Toolkit app for managing shop items. Built with React 19, Redux Toolkit, Material UI, Vite, and TypeScript.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🔧 Technologies
+⚛️ React 19
+🎯 Redux Toolkit
+🎨 Material UI
+⚡ Vite
+🧪 TypeScript
+✅ ESLint
 
-Currently, two official plugins are available:
+🖥️ Features
+Add items (name, price, amount)
+Search items by name
+Delete items
+Live summary:
+total item count
+total quantity
+total value
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Sample
 
-## Expanding the ESLint configuration
+<img width="235" height="461" alt="Image" src="https://github.com/user-attachments/assets/264d34c2-83ee-4526-8378-690e1c6f8e44" />
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+🚀 How to Start
+git clone https://github.com/your-username/my-app.git
+cd my-app
+npm install
+npm run dev
+To build:
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+npm run build
+npm run preview
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+📁 Project Structure
+src/
+├── components/
+│ ├── ItemForm.tsx
+│ ├── ItemList.tsx
+│ └── ItemSearch.tsx
+├── store/
+│ └── index.ts
+├── App.tsx
+├── main.tsx
+└── App.css
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+🔒 License
+Free to use for educational and demo purposes.
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-# store-cart
+Made with ❤️ using React and Redux Toolkit.
