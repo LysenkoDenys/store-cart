@@ -50,18 +50,36 @@ npm run dev
 ## 📁 Project Structure
 
 ```
-
-src/
-├── components/
-│ ├── ItemForm.tsx
-│ ├── ItemList.tsx
-│ └── ItemSearch.tsx
-├── store/
-│ └── index.ts
-├── App.tsx
-├── main.tsx
-└── App.css
-
+├─.gitignore
+├─eslint.config.js
+├─index.html
+├─package-lock.json
+├─package.json
+├─README.md
+├─structure.txt
+├─tsconfig.app.json
+├─tsconfig.json
+├─tsconfig.node.json
+├─vite.config.ts
+├─src
+|  ├─App.css
+|  ├─App.tsx
+|  ├─index.css
+|  ├─main.tsx
+|  ├─types.ts
+|  ├─vite-env.d.ts
+|  ├─store
+|  |   ├─index.ts
+|  |   ├─slices
+|  |   |   ├─itemFormSlice.ts
+|  |   |   └itemsSlice.ts
+|  ├─components
+|  |     ├─ItemForm.tsx
+|  |     ├─ItemList.tsx
+|  |     └ItemSearch.tsx
+|  ├─assets
+├─public
+|   └vite.svg
 ```
 
 ## 🔒 License

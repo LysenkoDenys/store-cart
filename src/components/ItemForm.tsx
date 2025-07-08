@@ -42,6 +42,10 @@ const ItemForm = () => {
           amount: itemForm.amount,
         })
       );
+      // Clear the form after adding the item
+      dispatch(setItemName(''));
+      dispatch(setItemAmount(0));
+      dispatch(setItemPrice(0));
     }
   };
 
